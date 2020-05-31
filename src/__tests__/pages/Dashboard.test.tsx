@@ -88,10 +88,16 @@ describe('Dashboard', () => {
       fireEvent.click(getByText('Novo Prato'));
     });
 
-    const inputImage = getByPlaceholderText('Cole o link aqui');
-    const inputName = getByPlaceholderText('Ex: Moda Italiana');
-    const inputValue = getByPlaceholderText('Ex: 19.90');
-    const inputDescription = getByPlaceholderText('Descrição');
+    const inputImage = getByPlaceholderText(
+      'Cole o link aqui',
+    ) as HTMLInputElement;
+    const inputName = getByPlaceholderText(
+      'Ex: Moda Italiana',
+    ) as HTMLInputElement;
+    const inputValue = getByPlaceholderText('Ex: 19.90') as HTMLInputElement;
+    const inputDescription = getByPlaceholderText(
+      'Descrição',
+    ) as HTMLInputElement;
 
     await act(async () => {
       fireEvent.change(inputImage, {
@@ -176,10 +182,16 @@ describe('Dashboard', () => {
       fireEvent.click(getByTestId('edit-food-1'));
     });
 
-    const inputImage = getByPlaceholderText('Cole o link aqui');
-    const inputName = getByPlaceholderText('Ex: Moda Italiana');
-    const inputValue = getByPlaceholderText('Ex: 19.90');
-    const inputDescription = getByPlaceholderText('Descrição');
+    const inputImage = getByPlaceholderText(
+      'Cole o link aqui',
+    ) as HTMLInputElement;
+    const inputName = getByPlaceholderText(
+      'Ex: Moda Italiana',
+    ) as HTMLInputElement;
+    const inputValue = getByPlaceholderText('Ex: 19.90') as HTMLInputElement;
+    const inputDescription = getByPlaceholderText(
+      'Descrição',
+    ) as HTMLInputElement;
 
     await act(async () => {
       fireEvent.change(inputImage, {

@@ -80,7 +80,7 @@ describe('Dashboard', () => {
   it('should be able to add a new food plate', async () => {
     apiMock.onGet('foods').reply(200, []);
 
-    const { getByText, getByTestId, getByPlaceholderText, debug } = render(
+    const { getByText, getByTestId, getByPlaceholderText } = render(
       <Dashboard />,
     );
 

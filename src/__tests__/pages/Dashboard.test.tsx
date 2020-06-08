@@ -314,6 +314,11 @@ describe('Dashboard', () => {
       timeout: 200,
     });
 
+    const putHistoryLength = apiMock.history.put.length;
+    expect(JSON.parse(apiMock.history.put[putHistoryLength - 1].data)).toEqual(
+      expect.objectContaining({ available: false }),
+    );
+
     expect(getByText('Ao molho')).toBeTruthy();
     expect(
       getByText(
